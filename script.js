@@ -132,4 +132,27 @@
 // console.log(recursiveFibonacci(10))//8
 // O(n) - Iterative
 //JavaScript Algorithms - 13 - Recursive Factorial of a Number
+// function recursiveFactorial(n){
+//     if( n === 0){
+//         return 1
+//     }
+//     return n * recursiveFactorial( n - 1)
+// }
+// console.log(recursiveFactorial(0))//1
+// console.log(recursiveFactorial(1))//1
+// console.log(recursiveFactorial(5))//120
+//JavaScript Algorithms - 15 - Linear Search
+function linearSearch(arr, target){
+    for(let i =  0; i < arr.length;i++){
+        if(arr[i] === target){
+            return i
+        }
+    }
+    return -1
+}
+console.log(linearSearch([-5,2,10,4,6,],10))//2
+console.log(linearSearch([-5,2,10,4,6,],6))//2
+console.log(linearSearch([-5,2,10,4,6,],20))//2
+
+
 
