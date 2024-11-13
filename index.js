@@ -11,6 +11,7 @@
 //     return n*(n+1)/2
 // }
 // console.log(summation(5));
+// მასივის ყველა აითემის დაპრინტვა
 // function printAllItems(arr) {
 //     for (let i = 0; i < arr.length; i++) {
 //         console.log(arr[i]);
@@ -30,13 +31,51 @@
 //     console.log(fibonacci(3))//[0,1,1]
 //     console.log(fibonacci(7))//[0,1,1,2,3,5,8
 //JavaScript Algorithms - 8 - Factorial of a Number
-function factorial(n){
-    let sum = 1
-    for(let i = 2; i <= n; i++){
-        sum = sum * i 
-    }
-    return sum
-}
-console.log(factorial(5))
-// videoshi dawerili
+// function factorial(n){
+//     let sum = 1
+//     for(let i = 2; i <= n;i++){
+//         sum = sum * i
+//     }
+//     return sum
+// }
+// console.log(factorial(5))
 
+// prime number
+// function isPrime(n){
+//     if(n < 2){
+//         return false
+//     }
+//     for(let i = 2;i < n;i++){
+//         if( n % i === 0 ){
+//             return false
+//         }
+//     }
+//     return true
+// }
+// console.log(isPrime(6))
+//JavaScript Algorithms - 10 - Power of Two ხარისხი
+function isPowerTwo(n){
+    if(n < 1 ){
+        return false
+    }
+    while(n > 1){
+        if(n % 2 !==0){
+            return false
+        }
+        n = n/2
+    }
+    return true
+}
+console.log(isPowerTwo(1)) // true
+console.log(isPowerTwo(2)) // true
+console.log(isPowerTwo(5)) // false
+function isPowerofTwoBitwise(n){
+    if(n < 1){
+        return false
+    }
+    return ( n & (n - 1) ) === 0
+
+}
+console.log(isPowerofTwoBitwise(1))
+console.log(isPowerofTwoBitwise(2))
+console.log(isPowerofTwoBitwise(5))
