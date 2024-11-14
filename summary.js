@@ -49,19 +49,26 @@
 // console.log(itisPrime(5))
 
 //JavaScript Algorithms - 10 - Power of Two  ამოწმებს თუ რიცხვი ნამრავლია 2ის, 2*2*2*2* ამთემაშია რა
-function isPowerOfTwo(n){
-    if(n < 1){
-        return false
-    }
-    while(n > 1){
-        if(n%2 !==0){
-            return false
 
-        }
-        n = n / 2
-
-    }
-    return true
-}
-
-console.log(isPowerOfTwo(32))
+// function isPowerTwo(n){
+//     if(n < 1){
+//         return false
+//     }
+//     while(n > 1){
+//         if(n % 2 !== 0){
+//             return false
+//         }
+//         n = n / 2
+//     }
+//     return true
+// }
+// console.log(isPowerTwo(5))
+// function isPowerTwoBitWise(n){    // constant time complexity  bekas vkitxot zedas msgavsia
+//     if(n<1){ 
+//         return false
+//     }
+//     return (n & (n - 1) ) === 0
+// }
+// console.log(isPowerTwoBitWise(16))
+//JavaScript Algorithms - 11 - Recursion //რეკურსია არის პრობლემის გადაჭრის ტექნიკა, სადაც გამოსავალი დამოკიდებულია იმავე პრობლემის მცირე ინსტანციების გადაწყვეტაზე, 
+// როცა ფუნქცია თვითონ გამოიძახება, გადაწყვეტის, გადაჭრის, გამოსავლის გამარტივებაა რეკურსია
