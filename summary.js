@@ -72,3 +72,24 @@
 // console.log(isPowerTwoBitWise(16))
 //JavaScript Algorithms - 11 - Recursion //რეკურსია არის პრობლემის გადაჭრის ტექნიკა, სადაც გამოსავალი დამოკიდებულია იმავე პრობლემის მცირე ინსტანციების გადაწყვეტაზე, 
 // როცა ფუნქცია თვითონ გამოიძახება, გადაწყვეტის, გადაჭრის, გამოსავლის გამარტივებაა რეკურსია
+//JavaScript Algorithms - 12 - Recursive Fibonacci Sequence   // ვკითხოთ ბექას
+// function recurSiveFibonacci(n){
+//     if(n  <  2){
+//         return n
+//     }
+//     return recurSiveFibonacci(n-1) + recurSiveFibonacci(n-2)
+// }
+// console.log(recurSiveFibonacci(6))
+// console.log(recurSiveFibonacci(1))
+
+// console.log(recurSiveFibonacci(0))
+//JavaScript Algorithms - 13 - Recursive Factorial of a Number  amazec vkitxot)
+function recursiveFactorial(n){
+    if(n ===0){
+        return 1
+    }
+    return n * recursiveFactorial(n - 1)
+}
+console.log(recursiveFactorial(0))//1
+console.log(recursiveFactorial(1))//1
+console.log(recursiveFactorial(5))//120
