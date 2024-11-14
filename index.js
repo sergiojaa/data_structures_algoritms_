@@ -54,28 +54,40 @@
 // }
 // console.log(isPrime(6))
 //JavaScript Algorithms - 10 - Power of Two ხარისხი
-function isPowerTwo(n){
-    if(n < 1 ){
-        return false
-    }
-    while(n > 1){
-        if(n % 2 !==0){
-            return false
-        }
-        n = n/2
-    }
-    return true
-}
-console.log(isPowerTwo(1)) // true
-console.log(isPowerTwo(2)) // true
-console.log(isPowerTwo(5)) // false
-function isPowerofTwoBitwise(n){
-    if(n < 1){
-        return false
-    }
-    return ( n & (n - 1) ) === 0
+// function isPowerTwo(n){
+//     if(n < 1 ){
+//         return false
+//     }
+//     while(n > 1){
+//         if(n % 2 !==0){
+//             return false
+//         }
+//         n = n/2
+//     }
+//     return true
+// }
+// console.log(isPowerTwo(1)) // true
+// console.log(isPowerTwo(2)) // true
+// console.log(isPowerTwo(5)) // false
+// function isPowerofTwoBitwise(n){
+//     if(n < 1){
+//         return false
+//     }
+//     return ( n & (n - 1) ) === 0
 
-}
-console.log(isPowerofTwoBitwise(1))
-console.log(isPowerofTwoBitwise(2))
-console.log(isPowerofTwoBitwise(5))
+// }
+// console.log(isPowerofTwoBitwise(1))
+// console.log(isPowerofTwoBitwise(2))
+// console.log(isPowerofTwoBitwise(5))
+//JavaScript Algorithms - 11 - Recursion
+// //JavaScript Algorithms - 12 - Recursive Fibonacci Sequence
+// function recurSiveibonacci(n){
+//     if(n < 2){
+//         return n
+//     }
+//     return recurSiveibonacci(n-1) +  recurSiveibonacci(n-2)
+// }
+// console.log(recurSiveibonacci(0))//0
+// console.log(recurSiveibonacci(1))//1
+// console.log(recurSiveibonacci(6))//8
+//JavaScript Algorithms - 13 - Recursive Factorial of a Number
