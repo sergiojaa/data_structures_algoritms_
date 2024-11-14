@@ -1,3 +1,5 @@
+// დროის სირთულე - დრო, რომელსაც სჭირდება ალგორითმი გასაშვებად, შეყვანის ზომის ფუნქციის მიხედვით
+// სივრცის სირთულე - მეხსიერების რაოდენობა, რომელსაც ალგორითმი იღებს გასაშვებად, შეყვანის ზომის ფუნქციის მიხედვით
 //  რიცხვის ჯამისალგორითმი
 // function summation(n){
 //     let sum = 0
@@ -40,7 +42,7 @@
 // }
 // console.log(factorial(5))
 
-// prime number
+// prime number // 1-ზე მეტი, რომელიც არ არის ორი პატარა ნატურალური რიცხვის ნამრავლი
 // function isPrime(n){
 //     if(n < 2){
 //         return false
@@ -101,7 +103,7 @@
 // console.log(recursiveFactorial(1))//1
 // console.log(recursiveFactorial(5))//120
 //search alghoritms
-//JavaScript Algorithms - 15 - Linear Search  time complexity
+// JavaScript Algorithms - 15 - Linear Search  time complexity
 // function linearSearch(arr, target){
 //     for(let i = 0; i < arr.length;i++){
 //         if(arr[i] === target){
@@ -134,23 +136,23 @@
 // console.log(binarySearch([-5,2,4,6,10], 6)) //3
 // console.log(binarySearch([-5,2,4,6,10], 20)) //-1
 //JavaScript Algorithms - 18 - Recursive Binary Search
-function recursiveBinarySearch(arr, target){
-    return search(arr, target,0, arr.length - 1) 
-}
-function search(arr,target, leftIndex, rightIndex){
-    if(leftIndex > rightIndex){
-        return - 1
-    }
-    let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
-    if(target === arr[middleIndex]){
-        return middleIndex
-    }
-    if(target < arr[middleIndex]){
-        return search(arr,target,leftIndex, middleIndex - 1)
-    }else{
-        return search(arr,target, middleIndex + 1, rightIndex)
-    }
-}
-console.log(recursiveBinarySearch([-5,2,4,6,10], 10))//4
-console.log(recursiveBinarySearch([-5,2,4,6,10], 6))//3
-console.log(recursiveBinarySearch([-5,2,4,6,10], 20))//-1
+// function recursiveBinarySearch(arr, target){
+//     return search(arr, target,0, arr.length - 1) 
+// }
+// function search(arr,target, leftIndex, rightIndex){
+//     if(leftIndex > rightIndex){
+//         return - 1
+//     }
+//     let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
+//     if(target === arr[middleIndex]){
+//         return middleIndex
+//     }
+//     if(target < arr[middleIndex]){
+//         return search(arr,target,leftIndex, middleIndex - 1)
+//     }else{
+//         return search(arr,target, middleIndex + 1, rightIndex)
+//     }
+// }
+// console.log(recursiveBinarySearch([-5,2,4,6,10], 10))//4
+// console.log(recursiveBinarySearch([-5,2,4,6,10], 6))//3
+// console.log(recursiveBinarySearch([-5,2,4,6,10], 20))//-1
