@@ -91,3 +91,12 @@
 // console.log(recurSiveibonacci(1))//1
 // console.log(recurSiveibonacci(6))//8
 //JavaScript Algorithms - 13 - Recursive Factorial of a Number
+// function recursiveFactorial(n){
+//     if(n === 0){
+//         return 1
+//     }
+//     return n * recursiveFactorial(n-1)
+// }
+// console.log(recursiveFactorial(0))//1
+// console.log(recursiveFactorial(1))//1
+// console.log(recursiveFactorial(5))//120
