@@ -47,3 +47,21 @@
 // }
 // console.log(itisPrime(4))
 // console.log(itisPrime(5))
+
+//JavaScript Algorithms - 10 - Power of Two  ამოწმებს თუ რიცხვი ნამრავლია 2ის, 2*2*2*2* ამთემაშია რა
+function isPowerOfTwo(n){
+    if(n < 1){
+        return false
+    }
+    while(n > 1){
+        if(n%2 !==0){
+            return false
+
+        }
+        n = n / 2
+
+    }
+    return true
+}
+
+console.log(isPowerOfTwo(32))
