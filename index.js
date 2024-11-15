@@ -171,6 +171,8 @@
 //JavaScript Algorithms - 16 - Binary Search  sort array unda ikos es ro gamovikenot, tu imenaamis gamokeneba gvinda mashin array unda davsortot da mere daviwkot ggamokeneba
 //es dalagebul arrayshi mokmedebs, anu [1,3,5,6,7,8,9] da tu unda vipovot romel indexzea 8,jer shua ricxvze dadgeba da mere sheadarebs, tu magalitad 8s vedzebt,
 //6 s sheadarebs rvas, rva metia eqvsze da marcxena mxares agar shexedavs, mere wava kide shuashi da ese mokmedebs.
+// tu dzaan didi masivi mak, es ufro efekturia,linear tavidan iwkebs gadavlas, eskide egreve shuashimidis mere isev shia da ese
+//es kodi uechveli asaxsneliaa
 function binarySearch(arr,target){
    let leftIndex = 0
    let rightIndex = arr.length - 1
