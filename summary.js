@@ -73,23 +73,36 @@
 //JavaScript Algorithms - 11 - Recursion //რეკურსია არის პრობლემის გადაჭრის ტექნიკა, სადაც გამოსავალი დამოკიდებულია იმავე პრობლემის მცირე ინსტანციების გადაწყვეტაზე, 
 // როცა ფუნქცია თვითონ გამოიძახება, გადაწყვეტის, გადაჭრის, გამოსავლის გამარტივებაა რეკურსია
 //JavaScript Algorithms - 12 - Recursive Fibonacci Sequence   // ვკითხოთ ბექას
-// function recurSiveFibonacci(n){
-//     if(n  <  2){
-//         return n
-//     }
-//     return recurSiveFibonacci(n-1) + recurSiveFibonacci(n-2)
-// }
-// console.log(recurSiveFibonacci(6))
-// console.log(recurSiveFibonacci(1))
-
-// console.log(recurSiveFibonacci(0))
-//JavaScript Algorithms - 13 - Recursive Factorial of a Number  amazec vkitxot)
-function recursiveFactorial(n){
-    if(n ===0){
-        return 1
+function recurSiveFibonacci(n){
+    if(n  <  2){
+        return n
     }
-    return n * recursiveFactorial(n - 1)
+    return recurSiveFibonacci(n-1) + recurSiveFibonacci(n-2)
 }
-console.log(recursiveFactorial(0))//1
-console.log(recursiveFactorial(1))//1
-console.log(recursiveFactorial(5))//120
+console.log(recurSiveFibonacci(6))
+console.log(recurSiveFibonacci(1))
+function fibonacci(n){
+    const fab = [0,1]
+    for(let i = 2;i < n;i++){
+        fab[i] = fab[i-1] + fab[i-2]  //fab2 = fab1 + fab0 fab3 = fab2 + fab1 // fab5 = fab4 + fab3 // fab6 = fab5 + fab4
+    }
+    return fab
+}
+console.log(fibonacci(6))
+//JavaScript Algorithms - 13 - Recursive Factorial of a Number  amazec vkitxot)
+// function recursiveFactorial(n){
+//     if(n ===0){
+//         return 1
+//     }
+//     return n * recursiveFactorial(n - 1)
+// }
+
+// console.log(recursiveFactorial(5))//120
+// function factorial(n){
+//     let sum = 1
+//     for(let i = 2; i <= n;i++){    // 1 * 2; 2 * 3, 3 * 4, 4 * 5, 5 * 6
+//         sum *= i  // 1*2 =2, 2 * 3 = 6, 6 * 4 = 24, 24 * 5 = 120
+//     }
+//     return sum
+// }
+// console.log(factorial(5))
