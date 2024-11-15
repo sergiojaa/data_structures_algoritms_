@@ -156,3 +156,36 @@
 // console.log(recursiveBinarySearch([-5,2,4,6,10], 10))//4
 // console.log(recursiveBinarySearch([-5,2,4,6,10], 6))//3
 // console.log(recursiveBinarySearch([-5,2,4,6,10], 20))//-1
+
+//linear search    // linear time complexity
+
+// function linearSearch(arr, target){
+//     for(let i = 0; i< arr.length;i++ ){
+//         if(target === arr[i]){     // masivshi edzebs romel indexze dgas konkretuli ricxvi
+//             return i
+//         }
+//     }
+//     return -1
+// }
+// console.log(linearSearch([2,5,7,8,],1))
+//JavaScript Algorithms - 16 - Binary Search  sort array unda ikos es ro gamovikenot, tu imenaamis gamokeneba gvinda mashin array unda davsortot da mere daviwkot ggamokeneba
+//es dalagebul arrayshi mokmedebs, anu [1,3,5,6,7,8,9] da tu unda vipovot romel indexzea 8,jer shua ricxvze dadgeba da mere sheadarebs, tu magalitad 8s vedzebt,
+//6 s sheadarebs rvas, rva metia eqvsze da marcxena mxares agar shexedavs, mere wava kide shuashi da ese mokmedebs.
+function binarySearch(arr,target){
+   let leftIndex = 0
+   let rightIndex = arr.length - 1
+
+   while(leftIndex <= rightIndex){
+    let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
+    if(target === arr[middleIndex]){
+        return middleIndex
+    }
+    if(target < arr[middleIndex]){
+        rightIndex = middleIndex -1
+    }else{
+        leftIndex = middleIndex +1
+    }
+   }
+   return -1
+}
+console.log(binarySearch([-5,2,4,6,10],6))
