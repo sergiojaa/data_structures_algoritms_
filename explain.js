@@ -125,3 +125,42 @@
 // }
 // console.log(itisPrime(4))
 // console.log(itisPrime(5))
+
+
+// prime number
+// function isPrime(n){    // chemi gaketebuli
+//     if(n < 2){
+//         return false
+//     }
+//     if(n % 2 !== 0){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+// console.log(isPrime(10))//false
+
+// function isPrime(n){
+//     if(n < 2){
+//         return false
+//     }
+//     for(let i = 2; i < n;i++){
+//         if(n % i === 0){
+//             return false
+//         }
+//     }
+//     return true
+// }
+// console.log(isPrime(5)) //true
+// console.log(isPrime(4)) //false
+// console.log(isPrime(1)) //false
+// function recursiveFactorial(n){
+//     if(n === 0){
+//         return 1
+//     }
+//     return n * recursiveFactorial(n-1)  // 5s amravlebs?
+// }
+// console.log(recursiveFactorial(0)) //1
+// console.log(recursiveFactorial(1)) //1
+// console.log(recursiveFactorial(5)) //120
+
