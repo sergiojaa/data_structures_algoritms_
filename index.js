@@ -173,21 +173,56 @@
 //6 s sheadarebs rvas, rva metia eqvsze da marcxena mxares agar shexedavs, mere wava kide shuashi da ese mokmedebs.
 // tu dzaan didi masivi mak, es ufro efekturia,linear tavidan iwkebs gadavlas, eskide egreve shuashimidis mere isev shia da ese
 //es kodi uechveli asaxsneliaa
-function binarySearch(arr,target){
-   let leftIndex = 0
-   let rightIndex = arr.length - 1
+// function binarySearch(arr,target){
+//    let leftIndex = 0
+//    let rightIndex = arr.length - 1
 
-   while(leftIndex <= rightIndex){
-    let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
-    if(target === arr[middleIndex]){
-        return middleIndex
+//    while(leftIndex <= rightIndex){
+//     let middleIndex = Math.floor((leftIndex + rightIndex) / 2)
+//     if(target === arr[middleIndex]){
+//         return middleIndex
+//     }
+//     if(target < arr[middleIndex]){
+//         rightIndex = middleIndex -1
+//     }else{
+//         leftIndex = middleIndex +1
+//     }
+//    }
+//    return -1
+// }
+// console.log(binarySearch([-5,2,4,6,10],6))
+
+//  ALGOUNIIIIIIII ALGOUNII
+// bubble sort
+// let arr = [10,6,4,123] 
+// let sortedArr = arr.sort((a,b)=> a - b)
+// console.log(sortedArr)
+// let arr = [10,6,4,123] 
+// for(let i = 0;i< arr.length -1;i++){
+//     for(let j = 0;j<arr.length -1 - i ;j++){
+//         if(arr[j] > arr[j+1]){
+//             let temp = arr[j]
+//             arr[j] = arr[j+1]
+//             arr[j + 1] = temp
+//         }
+//     }
+// }
+// console.log(arr)
+
+//binarysearch
+function binarySearch(arr,target){
+    let low = 0 
+    let high = arr.length - 1 
+    while(low <= high){
+        let mid = Math.floor((high + low )/2) 
+        if(arr[mid] === target){
+            return mid
+        }else if( arr[mid] > target ){
+             high = mid -1
+        }else{
+             low = mid +1
+        }
     }
-    if(target < arr[middleIndex]){
-        rightIndex = middleIndex -1
-    }else{
-        leftIndex = middleIndex +1
-    }
-   }
-   return -1
+    return -1
 }
-console.log(binarySearch([-5,2,4,6,10],6))
+console.log(binarySearch([2,3,5,7,8,10,12,15,18,20],18))
