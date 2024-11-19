@@ -71,31 +71,33 @@
 
 
 //quickSort
-let arr = [20,6,4,45,10,67,9,5,5,5,5,5,5];
-function quickSort(arr){
-    if(arr.length <=1){
-        return arr
-    }
-    const pivotIndex = Math.floor(arr.length / 2)   //masivis shua index
-    const pivot = arr[pivotIndex]
+// let arr = [20,6,4,45,10,67,9,5,5,5,5,5,5];
+// function quickSort(arr){
+//     if(arr.length <=1){
+//         return arr
+//     }
+//     const pivotIndex = Math.floor(arr.length / 2)   //masivis shua index
+//     const pivot = arr[pivotIndex]
 
-    const left = []
-    const right = []
-    for(let i = 0;i<arr.length;i++){
-        if(i === pivotIndex){
-            continue
-        }
-        if(arr[i] > pivot){
-            right.push(arr[i])
-        }else{
-            left.push(arr[i])
-        }
-    }
+//     const left = []
+//     const right = []
+//     for(let i = 0;i<arr.length;i++){
+//         if(i === pivotIndex){
+//             continue
+//         }
+//         if(arr[i] > pivot){
+//             right.push(arr[i])
+//         }else{
+//             left.push(arr[i])
+//         }
+//     }
      
-     return [...quickSort(left), pivot, ...quickSort(right)]
-}
-console.log(quickSort(arr))
+//      return [...quickSort(left), pivot, ...quickSort(right)]
+// }
+// console.log(quickSort(arr))
 // console.log(arr)
+
+
 
 
 
