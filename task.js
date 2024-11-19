@@ -1,3 +1,17 @@
+// es avxsnat.danarcheni top 100%
+// let arr = [10,5,7,3,20,15,17,50]
+// for(let i = 0; i < arr.length - 1;i++){  // indexs itvlis
+//     for(let j = 0;j<arr.length-1;j++){ // რიცხვების დალუპვა რო მერე შევადაროთ
+        
+//         if(arr[j] > arr[j+1]){
+//             let temp = arr[j]
+//             arr[j] = arr[j+1]
+//             arr[j+1] = temp
+//         }
+//     }
+// }
+// console.log(arr)
+
 function recursiveBiarySearch(arr,target){
     return search(arr,target, 0, arr.length-1)
 }
