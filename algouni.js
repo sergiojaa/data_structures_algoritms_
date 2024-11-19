@@ -49,25 +49,53 @@
 // console.log(binarySearch(arr, 12))
 
 // selection sort       //gareta cikli index ro gavigot,shignita ricxvebis shesadareblad
-let arr = [20,6,4,67,45,10,9,5];
-function selectionSort(arr){
-    for(let i = 0;i<arr.length-1;i++){
-        let maxIndex = 0
+// let arr = [20,6,4,67,45,10,9,5];
+// function selectionSort(arr){
+//     for(let i = 0;i<arr.length-1;i++){
+//         let maxIndex = 0
 
-        for(let j = 1;j< arr.length -i;j++){
-            if(arr[j] > arr[maxIndex] ){
-                maxIndex = j
+//         for(let j = 1;j< arr.length -i;j++){
+//             if(arr[j] > arr[maxIndex] ){
+//                 maxIndex = j
                 
-            }
-        }
-        let temp = arr[maxIndex]
-        arr[maxIndex] = arr[arr.length - i -1]
-        arr[arr.length - i -1] = temp
+//             }
+//         }
+//         let temp = arr[maxIndex]
+//         arr[maxIndex] = arr[arr.length - i -1]
+//         arr[arr.length - i -1] = temp
 
+//     }
+// }
+// selectionSort(arr)
+// console.log(arr)
+
+
+//quickSort
+let arr = [20,6,4,45,10,67,9,5,5,5,5,5,5];
+function quickSort(arr){
+    if(arr.length <=1){
+        return arr
     }
+    const pivotIndex = Math.floor(arr.length / 2)   //masivis shua index
+    const pivot = arr[pivotIndex]
+
+    const left = []
+    const right = []
+    for(let i = 0;i<arr.length;i++){
+        if(i === pivotIndex){
+            continue
+        }
+        if(arr[i] > pivot){
+            right.push(arr[i])
+        }else{
+            left.push(arr[i])
+        }
+    }
+     
+     return [...quickSort(left), pivot, ...quickSort(right)]
 }
-selectionSort(arr)
-console.log(arr)
+console.log(quickSort(arr))
+// console.log(arr)
 
 
 
