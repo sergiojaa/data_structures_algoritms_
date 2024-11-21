@@ -1,8 +1,37 @@
-// es avxsnat.danarcheni top 100%
-// let arr = [10,5,7,3,20,15,17,50]
-// for(let i = 0; i < arr.length - 1;i++){  // indexs itvlis
-//     for(let j = 0;j<arr.length-1;j++){ // რიცხვების დალუპვა რო მერე შევადაროთ
-        
+// linear search
+// let arr = [20,42,34,23,12,3,5,7,21]
+// function linearSearch(arr,target){
+//     for(let i = 0;i < arr.length ;i++){
+//         if(arr[i] === target){
+//             return i
+//         }
+//     }
+//     return -1
+// }
+// console.log(linearSearch(arr,21))
+// binary search
+// let arr = [2,4,6,8,10,12,14]
+// function binarySearch(arr,target){
+//     let low = 0
+//     let high = arr.length - 1
+//     while(low <= high){
+//         let mid = Math.floor((low + high) / 2)
+//         if(arr[mid] === target){
+//             return mid
+//         }else if(arr[mid] > target){
+//             high = high - 1
+//         }else{
+//             low = low + 1
+//         }
+//     }
+//     return -1
+// }
+// console.log(binarySearch(arr,10))
+//bubble sort
+// let arr = [10,1,2,3,5,4,9,8]
+
+// for(let i = 0;i<arr.length-1;i++){
+//     for(let j = 0;j<arr.length - 1 - i;j++){
 //         if(arr[j] > arr[j+1]){
 //             let temp = arr[j]
 //             arr[j] = arr[j+1]
@@ -12,24 +41,20 @@
 // }
 // console.log(arr)
 
-function recursiveBiarySearch(arr,target){
-    return search(arr,target, 0, arr.length-1)
-}
-function search(arr,target,leftIndex,rightIndex){
-    if(leftIndex > rightIndex){
-        return -1
-    }
-    let middleIndex = Math.floor((leftIndex + rightIndex  ) /2)
-    if(target === arr[middleIndex]){
-        return middleIndex
-    }
-    if(target < arr[middleIndex]){
-       return search(arr,target,leftIndex,middleIndex -1)
-    }else{
-       return search(arr,target,middleIndex+1,rightIndex  )
-    }
-
-}
-console.log(recursiveBiarySearch([-5,2,4,6,10],10)) //4
-console.log(recursiveBiarySearch([-5,2,4,6,10],6)) //3
-console.log(recursiveBiarySearch([-5,2,4,6,10],20)) //-1
+// selection sort
+// let arr = [20,6,4,67,45,10,9,4]  
+// function selectionSort(arr){
+//     for(let i = 0;i<arr.length-1;i++){
+//         let maxIndex = 0
+//         for(let j = 1;j<arr.length-i;j++){
+//             if(arr[j] > arr[maxIndex]){
+//                 maxIndex = j
+//             }
+//         }
+//         let temp = arr[maxIndex]
+//         arr[maxIndex] =  arr[arr.length -i -1]
+//         arr[arr.length -i-1] = temp
+//     }
+// }
+// selectionSort(arr)
+// console.log(arr)

@@ -98,6 +98,25 @@
 // console.log(arr)
 
 
+//selection sort    // 
+// let arr = [20,6,4,67,45,10,9,4]  
+// function selectionSort(arr){
+//     for(let i=0;i<arr.length-1;i++){
+//         let maxIndex = 0
+//         for(let j = 1;j < arr.length - i;j++){
+//             if(arr[j] > arr[maxIndex]){
+//                 maxIndex = j
+//             }
+//         }
+//         let temp = arr[maxIndex]
+//         arr[maxIndex] =  arr[arr.length - i - 1]
+//         arr[arr.length - i - 1] = temp
+
+//     }
+// }
+// selectionSort(arr)
+// console.log(arr)
+
 
 
 
