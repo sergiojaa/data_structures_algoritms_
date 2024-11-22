@@ -70,7 +70,18 @@
 // console.log(arr)
 
 
-//quickSort
+//quickSort  
+// masivshi igeben ert ricxvs bolos pirvsl an shuas,arakmnishvneloba da
+//aiges shuaricxvi masivis marrcxena mxares tveben am ricxvze nakle ricxvebs,
+//marjvniv ki am ricxvze did ricxvebs.
+//sheileba axal masivshic chavkaot es ricxvei,mere im axali masivebidanac
+//igeben shua ricxvs da igives aketeebrn 
+// 3 etapisgan shdgeba , 
+// pirveli erapi pibot cvladi romelzec shua elementia ert erti elementia ra
+//2. masivi ise unda gadavalagot ro pivotzenaklebi ricxvebi marcxniv,meti ki
+//marjvniv gadavisrolot da pivot tavis adgilze idgeba
+//3. is patara masivebi ro gvekneba mere mmagatac vaadgilebt 
+// arrayshi shua index ro gavigot, arr.length /2 math floorshi
 // let arr = [20,6,4,45,10,67,9,5,5,5,5,5,5];
 // function quickSort(arr){
 //     if(arr.length <=1){
@@ -95,26 +106,6 @@
 //      return [...quickSort(left), pivot, ...quickSort(right)]
 // }
 // console.log(quickSort(arr))
-// console.log(arr)
-
-
-//selection sort    // 
-// let arr = [20,6,4,67,45,10,9,4]  
-// function selectionSort(arr){
-//     for(let i=0;i<arr.length-1;i++){
-//         let maxIndex = 0
-//         for(let j = 1;j < arr.length - i;j++){
-//             if(arr[j] > arr[maxIndex]){
-//                 maxIndex = j
-//             }
-//         }
-//         let temp = arr[maxIndex]
-//         arr[maxIndex] =  arr[arr.length - i - 1]
-//         arr[arr.length - i - 1] = temp
-
-//     }
-// }
-// selectionSort(arr)
 // console.log(arr)
 
 

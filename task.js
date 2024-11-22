@@ -41,7 +41,7 @@
 // }
 // console.log(arr)
 
-// selection sort
+// // selection sort
 // let arr = [20,6,4,67,45,10,9,4]  
 // function selectionSort(arr){
 //     for(let i = 0;i<arr.length-1;i++){
@@ -58,3 +58,29 @@
 // }
 // selectionSort(arr)
 // console.log(arr)
+
+// quicksort
+let arr = [20,6,4,45,10,9,4 ,10,10,67]  
+function quickSort(arr){
+    if(arr.length <= 1){
+        return arr
+    }
+    const pivotIndex = Math.floor(arr.length / 2)
+    const pivot = arr[pivotIndex]
+    let left = []
+    let right = []
+    for(let i = 0; i < arr.length;i++){  // for loopshi kitxvas vsvavt tu naklebia marcn tuarada marj
+        if(i === pivotIndex){
+            continue
+        }
+        if(arr[i] > pivot){
+            right.push(arr[i])
+        }else{
+            left.push(arr[i])
+        }
+    }  
+     
+    return [...quickSort(left), pivot, ...quickSort(right)]
+}
+const sortedArray = quickSort(arr);
+console.log(sortedArray)
